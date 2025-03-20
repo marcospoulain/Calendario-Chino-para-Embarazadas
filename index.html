@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Chino para Embarazadas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Calendario Chino para Embarazadas</h1>
+            <p class="subtitle">Descubre predicciones basadas en la sabiduría tradicional china</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>¿Qué es el Calendario Chino de Embarazo?</h2>
+            <p>El calendario chino de embarazo es un método tradicional que se utiliza para predecir el sexo del bebé basándose en la edad lunar de la madre al momento de la concepción y el mes lunar en que ocurrió la concepción.</p>
+            <p>Aunque no tiene base científica comprobada, es una tradición milenaria que muchas futuras madres consultan por diversión o curiosidad.</p>
+        </section>
+
+        <section class="calculator">
+            <h2>Calculadora de Predicción</h2>
+            <div class="calculator-form">
+                <div class="form-group">
+                    <label for="mother-age">Edad de la madre al concebir:</label>
+                    <input type="number" id="mother-age" min="18" max="45" placeholder="Edad">
+                </div>
+                <div class="form-group">
+                    <label for="conception-month">Mes de concepción:</label>
+                    <select id="conception-month">
+                        <option value="">Selecciona un mes</option>
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                </div>
+                <button id="predict-btn" class="btn">Predecir</button>
+            </div>
+            <div id="result" class="result-container hidden">
+                <h3>Resultado de la Predicción</h3>
+                <p id="prediction-text"></p>
+                <div class="result-image">
+                    <img id="baby-image" src="" alt="Predicción del bebé">
+                </div>
+            </div>
+        </section>
+
+        <section class="calendar">
+            <div class="calendar-header">
+                <h2>Tabla del Calendario Chino</h2>
+                <button id="toggle-table" class="btn">Mostrar tabla</button>
+            </div>
+            <div class="table-container">
+                <table id="chinese-calendar">
+                    <thead>
+                        <tr>
+                            <th>Edad / Mes</th>
+                            <th>Ene</th>
+                            <th>Feb</th>
+                            <th>Mar</th>
+                            <th>Abr</th>
+                            <th>May</th>
+                            <th>Jun</th>
+                            <th>Jul</th>
+                            <th>Ago</th>
+                            <th>Sep</th>
+                            <th>Oct</th>
+                            <th>Nov</th>
+                            <th>Dic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- La tabla se llenará con JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <p class="disclaimer">* Esta tabla es una representación del calendario chino tradicional. Los resultados son solo por diversión y no tienen validez científica.</p>
+        </section>
+
+        <section class="pregnancy-tracker">
+            <h2>Seguimiento del Embarazo</h2>
+            <div class="tracker-form">
+                <div class="form-group">
+                    <label for="due-date">Fecha estimada de parto:</label>
+                    <input type="date" id="due-date">
+                </div>
+                <button id="calculate-weeks" class="btn">Calcular Semanas</button>
+            </div>
+            <div id="pregnancy-progress" class="progress-container hidden">
+                <h3>Tu Progreso</h3>
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+                <p id="weeks-text"></p>
+                <div id="trimester-info" class="trimester-info">
+                    <!-- Información del trimestre actual -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Calendario Chino para Embarazadas</p>
+            <p class="disclaimer">Esta aplicación es solo para fines de entretenimiento y no debe tomarse como consejo médico.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
