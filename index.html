@@ -58,6 +58,27 @@
             </div>
         </section>
 
+        <section class="pregnancy-tracker">
+            <h2>Seguimiento del Embarazo</h2>
+            <div class="tracker-form">
+                <div class="form-group">
+                    <label for="due-date">Fecha estimada de parto:</label>
+                    <input type="date" id="due-date">
+                </div>
+                <button id="calculate-weeks" class="btn">Calcular Semanas</button>
+            </div>
+            <div id="pregnancy-progress" class="progress-container hidden">
+                <h3>Tu Progreso</h3>
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+                <p id="weeks-text"></p>
+                <div id="trimester-info" class="trimester-info">
+                    <!-- Información del trimestre actual -->
+                </div>
+            </div>
+        </section>
+
         <section class="calendar">
             <div class="calendar-header">
                 <h2>Tabla del Calendario Chino</h2>
@@ -88,27 +109,6 @@
                 </table>
             </div>
             <p class="disclaimer">* Esta tabla es una representación del calendario chino tradicional. Los resultados son solo por diversión y no tienen validez científica.</p>
-        </section>
-
-        <section class="pregnancy-tracker">
-            <h2>Seguimiento del Embarazo</h2>
-            <div class="tracker-form">
-                <div class="form-group">
-                    <label for="due-date">Fecha estimada de parto:</label>
-                    <input type="date" id="due-date">
-                </div>
-                <button id="calculate-weeks" class="btn">Calcular Semanas</button>
-            </div>
-            <div id="pregnancy-progress" class="progress-container hidden">
-                <h3>Tu Progreso</h3>
-                <div class="progress-bar">
-                    <div id="progress" class="progress"></div>
-                </div>
-                <p id="weeks-text"></p>
-                <div id="trimester-info" class="trimester-info">
-                    <!-- Información del trimestre actual -->
-                </div>
-            </div>
         </section>
     </main>
 
